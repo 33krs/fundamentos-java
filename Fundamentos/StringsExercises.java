@@ -13,6 +13,18 @@ public class StringsExercises {
         // 10. Comprueba si dos strings tienen la misma longitud.
 
 
+        String name="Cristóbal";
+        System.out.println("Hola "+"como estas?"); //1
+        System.out.println("Hola mundo!".length()); //2
+        System.out.println(name.charAt(0)+" "+name.charAt(name.length() - 1 )); //3
+        System.out.println(name.toUpperCase() + "" + name.toLowerCase()); //4
+        System.out.println("Hola mundo!".contains(name)); //5
+        System.out.println(String.format("Hola, soy %s",name)); //6
+        System.out.println("    Hola, me llamo Cristóbal y tengo 19       ".trim()); //7
+        System.out.println("Hola, me llamo Cristóbal y tengo 19".replace(" ","-")); //8
+        System.out.println("CrIsTóbAl".equalsIgnoreCase(name)); //9
+        System.out.println(name.length() == "Brillante".length()); //10
+
 
 
 
