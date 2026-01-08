@@ -6,7 +6,7 @@ public class HashMaps {
 
     public static void main(String[] args){
 
-        HashMap<String, String> names = new HashMap();
+        HashMap<String, String> names = new HashMap<>();
         var numbers = new HashMap<Integer, String>();
 
         //Size
