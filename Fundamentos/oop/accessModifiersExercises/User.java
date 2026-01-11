@@ -11,6 +11,21 @@ public class User {
         this.password=password;
     }
 
+    public void setUsername(String username){
+        this.username = username;
+        System.out.println("Su nuevo nombre de usuario es: "+username);
+    }
 
+    public void setPassword(String password){
+        this.password=password;
+        System.out.println("Se ha cambiado su contrase;a con exito. ");
+    }
+
+    public void checkPassword(String inputPassword){
+        if(password.equals(inputPassword)){
+            System.out.println("Las contraseñas son iguales");
+        } else System.out.println("Las contraseñas son diferentes");
+
+    }
 
 }
