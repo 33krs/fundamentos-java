@@ -1,0 +1,78 @@
+package oop;
+
+public class Abstraction {
+    public static void main(String[] args){
+
+        var dog = new Dog();
+        dog.sleep();
+        var cat = new Cat();
+        cat.sleep();
+    }
+
+    //Clase abstracta
+
+    public static abstract class Animal {
+
+        public abstract void sound();
+
+        public void sleep() {
+            System.out.println("El animal está durmiendo");
+        }
+    }
+
+    public static class Dog extends Animal {
+
+        @Override
+        public void sound() {
+            System.out.println("Guau");
+        }
+
+        @Override
+        public void sleep() {
+            System.out.println("El perro está durmiendo");
+        }
+    }
+
+    public static class Cat extends Animal {
+
+        @Override
+        public void sound() {
+            System.out.println("Miau");
+        }
+    }
+
+    // - Interface
+
+    public interface Flying {
+
+        void fly();
+    }
+
+    public static class Bird extends Animal implements Flying {
+
+        @Override
+        public void sound() {
+            System.out.println("Pio pio");
+        }
+
+        @Override
+        public void fly() {
+            System.out.println("El pájaro vuela");
+        }
+    }
+
+    public static class Bat extends Animal implements Flying {
+
+        @Override
+        public void sound() {
+            System.out.println("Soy batman!");
+        }
+
+        @Override
+        public void fly() {
+            System.out.println("El murciélago vuela");
+        }
+    }
+
+
+}
